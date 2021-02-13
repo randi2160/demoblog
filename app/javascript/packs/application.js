@@ -7,13 +7,14 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-//import "../stylesheets/application.scss"
+import "bootstrap"
+import "../stylesheets/material-dashboard.css"
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 console.log('Hello from application.js')
 
-require("bootstrap")
 
 document.addEventListener("turbolinks:load", function() {
   $(function() {
@@ -22,23 +23,39 @@ document.addEventListener("turbolinks:load", function() {
   })
 })
 
+var jQuery = require('jquery')
+console.log('Hello from jquery.js')
+var moment = require('moment')
+console.log('Hello from moments.js')
+var jvectorma = require('jqvmap')
+console.log('Hello from jqvmap')
+// include jQuery in global and window scope (so you can access it globally)
+// in your web browser, when you type $('.div'), it is actually refering to global.$('.div')
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
 
+// include moment in global and window scope (so you can access it globally)
+global.moment = moment;
+window.moment = moment;
 // CSS
 //import '../stylesheets/application.scss'
 // JS
+require("bootstrap")
+console.log('Hello frombootstrap')
+require("bootstrap-material-design")
+console.log('Hello fromboo material design')
 
+import "daterangepicker"
 import 'jquery'
+import 'jqvmap'
 import 'core/jquery.min'
+import 'plugins/jquery-jvectormap'
 //import 'packs/material-dashboards.js'
 import 'core/bootstrap-material-design.min'
-import 'packs/material-dashboards'
-require("jquery")
-require("core/jquery.min")
-require("packs/material-dashboards")
-require("core/bootstrap-material-design.min")
-require("plugins/arrive.min")
-require("plugins/bootstrap-datetimepicker.min")
-require("plugins/bootstrap-notify")
+import 'plugins/arrive.min'
+import 'core/bootstrap-material-design.min'
+import 'plugins/bootstrap-datetimepicker.min'
+import 'plugins/bootstrap-notify'
 
 
 // Images
