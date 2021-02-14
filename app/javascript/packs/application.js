@@ -44,6 +44,9 @@ require("bootstrap")
 console.log('Hello frombootstrap')
 require("bootstrap-material-design")
 console.log('Hello fromboo material design')
+require("chartkick")
+require("chart.js")
+require("chartist")
 
 import "daterangepicker"
 import 'jquery'
