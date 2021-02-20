@@ -2,13 +2,13 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
-
+//import "@fortawesome/fontawesome-free/js/all";
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
-import "../stylesheets/material-dashboard.css"
+import "../stylesheets/material-dashboard.min.css?v=2.2.2"
 
 Rails.start()
 Turbolinks.start()
@@ -47,20 +47,13 @@ console.log('Hello fromboo material design')
 require("chartkick")
 require("chart.js")
 require("chartist")
+import "core/bootstrap-material-design.min.js"
+console.log('Hello core/bootstrap-material-design.min.js')
+import "plugins/moment.min.js"
+console.log('plugins/moment.min.js')
 
-import "daterangepicker"
-import 'jquery'
-import 'jqvmap'
-import 'core/jquery.min'
-import 'plugins/jquery-jvectormap'
-//import 'packs/material-dashboards.js'
-import 'core/bootstrap-material-design.min'
-import 'plugins/arrive.min'
-import 'core/bootstrap-material-design.min'
-import 'plugins/bootstrap-datetimepicker.min'
-import 'plugins/bootstrap-notify'
-
-
+import "plugins/nouislider.min.js"
+import "packs/material-dashboard.min.js"
 // Images
 const images = require.context('../images', true)
 const imagePath = (name) => images(name, true)
