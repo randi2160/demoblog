@@ -12,6 +12,7 @@
     <%= stylesheet_pack_tag "application", media: "all", "data-turbolinks-track": "reload" %>
      
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <%= csrf_meta_tags %>
   </head>
 
   <body class="">
@@ -35,9 +36,9 @@
                     <p class="alert alert-danger"><%= alert %></p>
                     <% end %>
                      <%= render 'base/sidenavbar' %>   
-                   <%= yield %>
+                   <%= yield%>
                    
-                   
+                    
                   
                  </div>  
                </div>  
@@ -45,9 +46,9 @@
            </div>  
            </div>  
        </div>  
-      <%= render 'base/footer' %> 
+     
       </div>
-    
+     
   </body>
   
 </html>

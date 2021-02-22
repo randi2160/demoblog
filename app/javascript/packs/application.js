@@ -7,7 +7,7 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import "bootstrap"
+//import "bootstrap"
 import "../stylesheets/material-dashboard.min.css?v=2.2.2"
 
 Rails.start()
