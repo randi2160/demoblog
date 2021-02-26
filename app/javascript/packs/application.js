@@ -64,13 +64,13 @@ import "core/bootstrap-material-design.min.js"
 console.log('Hello core/bootstrap-material-design.min.js')
 import "plugins/moment.min.js"
 console.log('plugins/moment.min.js')
-import "socialjs/script.js"
+/*import "socialjs/script.js"
 import "socialjs/flatpickr.min.js"
 import "socialjs/jquery.mCustomScrollbar.js"
 import "socialjs/jquery.min.js"
 import "socialjs/jquery.range-min.js"
 import "socialjs/scrollbar.js"
-import "socialjs/popper.js"
+import "socialjs/popper.js"*/
 import "plugins/nouislider.min.js"
 import "packs/material-dashboard.min.js"
 // Images
