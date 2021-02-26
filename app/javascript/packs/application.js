@@ -9,6 +9,19 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 //import "bootstrap"
 import "../stylesheets/material-dashboard.min.css?v=2.2.2"
+import "../stylesheets/social/style.css"
+//import "../stylesheets/social/animate.css"
+//import "../stylesheets/social/flatpickr.min.css"
+//import "../stylesheets/social/font-awesome.min.css"
+//import "../stylesheets/social/jquery.mCustomScrollbar.min.css"
+//import "../stylesheets/social/jquery.range.css"
+//import "../stylesheets/social/line-awesome.css"
+//import "../stylesheets/social/responsive.css"
+//import "../stylesheets/social/line-awesome.min.css"
+//import "../stylesheets/social/line-awesome-font-awesome.min.css"
+//import "../stylesheets/social/line-awesome-font-awesome.css"
+//import "../stylesheets/light-bootstrap-dashboard-react.css"
+import "../stylesheets/custom.css"
 
 Rails.start()
 Turbolinks.start()
@@ -51,7 +64,13 @@ import "core/bootstrap-material-design.min.js"
 console.log('Hello core/bootstrap-material-design.min.js')
 import "plugins/moment.min.js"
 console.log('plugins/moment.min.js')
-
+import "socialjs/script.js"
+import "socialjs/flatpickr.min.js"
+import "socialjs/jquery.mCustomScrollbar.js"
+import "socialjs/jquery.min.js"
+import "socialjs/jquery.range-min.js"
+import "socialjs/scrollbar.js"
+import "socialjs/popper.js"
 import "plugins/nouislider.min.js"
 import "packs/material-dashboard.min.js"
 // Images

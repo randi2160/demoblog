@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
     <title>Khemlall Mangal Blog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,11 +16,13 @@
      <%= csrf_meta_tags %>
   </head>
 
-  <body class="">
+  <body class="sidebar-mini">
     <div class="wrapper ">
   
    
      <%= render 'base/headnavbar' %>
+    
+      
       <div class="main-panel">
         
         <div class="content">
@@ -35,7 +38,7 @@
                   <% if alert %>
                     <p class="alert alert-danger"><%= alert %></p>
                     <% end %>
-                     <%= render 'base/sidenavbar' %>   
+                    
                    <%= yield%>
                    
                     

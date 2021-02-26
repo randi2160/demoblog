@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Khemlall Mangal Blog</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+   
+     <!-- <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>-->
+    <%= stylesheet_pack_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+     
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <%= csrf_meta_tags %>
+  </head>
+
+  <body class="sidebar-mini">
+    <div class="wrapper ">
+  
+   
+     <%= render 'base/headnavbar' %>
+      <div class="main-panel">
+        
+        <div class="content">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                
+        
+                    <% if notice %>
+                    <p class="alert alert-success"><%= notice %></p>
+                  <% end %>
+                  <% if alert %>
+                    <p class="alert alert-danger"><%= alert %></p>
+                    <% end %>
+                     
+                   <%= yield%>
+                   
+                    
+                  
+                 </div>  
+               </div>  
+             </div>  
+           </div>  
+           </div>  
+       </div>  
+     
+      </div>
+     
+  </body>
+  
+</html>
