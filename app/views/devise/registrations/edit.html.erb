@@ -156,8 +156,13 @@
                 <div class="card-avatar">
                   <a href="#pablo">
                    
-                    <%= image_tag current_user.avatar %>
-                     
+                    <%#= image_tag current_user.avatar %>
+                    
+                      <%if resource.avatar.attached? %>
+                    <%= image_tag resource.avatar %>
+                    <% else %>
+                     <%= image_pack_tag "media/images/noimage.png" %>
+                    <% end %>
                   </a>
                 </div>
               

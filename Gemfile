@@ -32,7 +32,7 @@ gem 'image_processing', '~> 1.2'
 #gem 'graphicsmagick', '~> 1.0', '>= 1.0.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-
+gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
